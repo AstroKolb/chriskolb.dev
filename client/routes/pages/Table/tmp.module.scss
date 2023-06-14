@@ -1,0 +1,28 @@
+.lootTable {
+   // for each entry
+   & > * > * {
+      padding: 0.5rem;
+      background: #56d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   // for alternating cols
+   & > * > *:nth-child(2n) {
+      background: rgb(76, 94, 226);
+   }
+
+   // for alternating rows
+   & > *:nth-child(2n) > * {
+      filter: brightness(80%);
+   }
+}
+
+.colHeader {
+   font-weight: bold;
+}
+
+.rowHeader {
+   font-weight: bold;
+}

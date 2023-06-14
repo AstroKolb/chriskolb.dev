@@ -1,0 +1,15 @@
+{
+   "ignore": [
+      "**/node_modules",
+      "server/storage",
+      "coverage",
+      "dist",
+      "**/*.test.ts",
+      "client",
+      "public"
+   ],
+   "watch": ["server"],
+   "env": {
+      "NODE_ENV": "development"
+   }
+}

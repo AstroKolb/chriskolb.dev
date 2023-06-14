@@ -1,0 +1,26 @@
+{
+   "compilerOptions": {
+      "noEmit": true,
+      "strict": true,
+      "target": "ESNext",
+      "module": "ESNext",
+      "lib": ["ESNext", "DOM", "DOM.Iterable"],
+      "allowJs": true,
+      "jsx": "preserve",
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "forceConsistentCasingInFileNames": true,
+      "useUnknownInCatchVariables": true,
+      "paths": {
+         "@/types": ["types"],
+         "@/test": ["test"],
+         "@server/*": ["server/*"],
+         "@/*": ["client/*"]
+      },
+      "typeRoots": ["./types", "node_modules/@types"],
+      "baseUrl": "."
+   },
+   "exclude": ["node_modules", "server/node_modules"],
+   "include": ["client", "server", "types", "test"]
+}
